@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./plugin/bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./plugin/jquery-nice-select/css/nice-select.css"/>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>MoM</title>
+</head>
+
+<body>
+    <!-- Begin header -->
+    <div class="header">
+        <nav class="navbar navbar-expand-lg">
+            <a class="navbar-brand" href="home.html"><img class="logo" src="images/logo.svg" /></a>
+            
+            <ul class="navbar-nav justify-content-end">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Trang chủ <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Giới thiệu
+                    </a>
+                    <div class="dropdown-menu rounded-0" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">MoM</a>
+                        <a class="dropdown-item" href="#">Sứ mệnh</a>
+                    </div>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">Sản phẩm</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Đội ngũ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Thành tựu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Liên hệ</a>
+                </li>
+                <li class="nav-item navbar-item-toggler">
+                    <img src="images/icon-menu.svg" alt=""/>
+                </li>
+            </ul>
+        
+        </nav>
+    </div>
+    <!-- End header -->
+
+    <!-- Begin container -->
+    <div class="container container-page">
+        <div class="d-flex body-page">
+            <div class="flex-grow-1 col-chart">
+                <div class="heading d-flex bg-yellow position-relative">
+                    <div class="animal-age text-center">
+                        <img src="./images/icon-mouse.svg" alt="icon mnouse">
+                    </div>
+                    <div class="title text-center">Canh Tý</div>
+                    <div class="info">
+                        <p>Năm: <strong>1924 - 1984 - 2044</strong></p>
+                        <p>Mệnh: <strong>Hải Trung Kim</strong></p>
+                    </div>
+                </div>
+                <div class="box-chart text-center">
+                    <img src="./images/chart.png" alt="chart">
+                </div>
+                <div class="group-btn-fate text-center">
+                    <button class="btn btn-yellow"></button>
+                    <button class="btn btn-blue"></button>
+                    <button class="btn btn-green"></button>
+                    <button class="btn btn-orange"></button>
+                    <button class="btn btn-brown"></button>
+                </div>
+                <div class="group-label-percent text-center">
+                    <label class="item">54.2%</label>
+                    <label class="item">4.0%</label>
+                    <label class="item">28.3%</label>
+                    <label class="item">0.3%</label>
+                    <label class="item">2.0%</label>
+                </div>
+                <div class="group-label-percent text-center">
+                    <label class="item">54.2%</label>
+                    <label class="item">4.0%</label>
+                    <label class="item">28.3%</label>
+                    <label class="item">0.3%</label>
+                    <label class="item">2.0%</label>
+                </div>
+            </div>
+            <div class="bd-highlight col-info">
+                <h1 class="heading-title text-uppercase">Lục trụ mệnh lý</h1>
+                
+                <form class="profile-form" method="get" action="">
+                    <div class="note">Vui lòng nhập đầy đủ thông tin đánh dấu (*)</div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <input type="text" class="form-control" placeholder="Họ*" />
+                        </div>
+                        <div class="col-lg-4">
+                            <input type="text" class="form-control" placeholder="Tên đệm"/>
+                        </div>
+                        <div class="col-lg-4">
+                            <input type="text" class="form-control" placeholder="Tên*"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <select class="form-control">
+                                <option data-display="Giờ sinh">Giờ sinh</option>
+                                <option value="1">Tý</option>
+                                <option value="2">Ngọ</option>
+                                <option value="3" disabled>Dậu</option>
+                                <option value="4">Tức</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <select class="form-control">
+                                <option data-display="Ngày sinh">1</option>
+                                <option value="1">2</option>
+                                <option value="2">3</option>
+                                <option value="3" disabled>4</option>
+                                <option value="4">5</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <select class="form-control">
+                                <option data-display="Tháng sinh">1</option>
+                                <option value="1">2</option>
+                                <option value="2">4</option>
+                                <option value="4">5</option>
+                            </select>
+                        </div>
+                        <div class="col-lg-3">
+                            <select class="form-control">
+                                <option data-display="Năm sinh">2000</option>
+                                <option value="1">2001</option>
+                                <option value="2">2002</option>
+                                <option value="3" disabled>2003</option>
+                                <option value="4">2004</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-4">
+                            <select class="form-control">
+                                <option data-display="Giới tính">Nam</option>
+                                <option value="1">Nữ</option>
+                                <option value="2">Khác</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <input class="form-control" type="text" placeholder="" value="Thành phố Hồ Chí Minh"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <input class="form-control" type="text" placeholder="Địa chỉ*" />
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-end">
+                        <button class="btn btn-global rounded-pill btn-reset text-uppercase">Nhập lại</button>
+                        <button class="btn btn-global rounded-pill btn-accept text-uppercase">Chấp nhận</button>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+    <!-- End container -->
+
+    <!-- Begin footer -->
+    <footer class="text-center">
+        <div class="copyright text-uppercase">© 2020 MOM CO., LTD.</div>
+        <div class="social">
+            <a href="javascript:(0);"><img src="images/icon-facebook.svg" class="icon" alt="facebook icon"/></a>
+            <a href="javascript:(0);"><img src="images/icon-gplus.svg" class="icon" alt="google icon"/></a>
+            <a href="javascript:(0);"><img src="images/icon-twitter.svg" class="icon" alt="twitter icon"/></a>
+            <a href="javascript:(0);"><img src="images/icon-youtube.svg" class="icon" alt="youtube icon"/></a>
+        </div>
+    </footer>
+    <!-- End footer -->
+
+
+    <script src="./js/jquery-3.5.1.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./plugin//bootstrap/js/bootstrap.min.js"></script>
+    <script src="./plugin/jquery-nice-select/js/jquery.nice-select.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
