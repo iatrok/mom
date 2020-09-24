@@ -15,8 +15,8 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./plugin/bootstrap/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./plugin/jquery-nice-select/css/nice-select.css"/>
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/responsive.css" /> 
 
 </head>
 
@@ -142,28 +142,34 @@
                 <div class="box-chart text-center">
                     <img src="./images/chart.png" alt="chart">
                 </div>
-                <div class="d-flex justify-content-center group-btn-fate text-center">
-                    <button class="btn btn-yellow"><img src="./images/icons/icon-sword.svg" alt="icon sword"/></button>
-                    <button class="btn btn-blue"><img src="./images/icons/icon-water.svg" alt="icon water"/></button>
-                    <button class="btn btn-green"><img src="./images/icons/icon-tree.svg" alt="icon tree"/></button>
-                    <button class="btn btn-orange"><img src="./images/icons/icon-fire.svg" alt="icon fire"/></button>
-                    <button class="btn btn-brown"><img src="./images/icons/icon-earth.svg" alt="icon earth"/></button>
-                </div>
-                <div class="d-flex justify-content-center group-label-percent text-center position-relative">
-                    <img src="./images/icons/icon-plus.svg" class="icon" alt="icon plus"/>
-                    <label class="item">54.2%</label>
-                    <label class="item">4.0%</label>
-                    <label class="item">28.3%</label>
-                    <label class="item">0.3%</label>
-                    <label class="item">2.0%</label>
-                </div>
-                <div class="d-flex justify-content-center group-label-percent text-center position-relative">
-                    <img src="./images/icons/icon-minus.svg" class="icon" alt="icon minus"/>
-                    <label class="item">54.2%</label>
-                    <label class="item">4.0%</label>
-                    <label class="item">28.3%</label>
-                    <label class="item">0.3%</label>
-                    <label class="item">2.0%</label>
+                <div class="d-flex justify-content-center group-btn-fate text-center group-label-percent">
+                    <div class="position-relative">
+                        <a class="btn btn-yellow" href="roadmap.html"><img src="./images/icons/icon-sword.svg" alt="icon sword"/></a>
+                        <label class="item">54.2%</label>
+                        <label class="item">54.2%</label>
+                        <img src="./images/icons/icon-plus.svg" class="icon plus" alt="icon plus"/>
+                        <img src="./images/icons/icon-minus.svg" class="icon minus" alt="icon minus"/>
+                    </div>
+                    <div>
+                        <a class="btn btn-blue" href="roadmap.html"><img src="./images/icons/icon-water.svg" alt="icon water"/></a>
+                        <label class="item">4.0%</label>
+                        <label class="item">4.0%</label>
+                    </div>
+                    <div>
+                        <a class="btn btn-green" href="roadmap.html"><img src="./images/icons/icon-tree.svg" alt="icon tree"/></a>
+                        <label class="item">3.0%</label>
+                        <label class="item">3.0%</label>
+                    </div>
+                    <div>
+                        <a class="btn btn-orange" href="roadmap.html"><img src="./images/icons/icon-fire.svg" alt="icon fire"/></a>
+                        <label class="item">2.0%</label>
+                        <label class="item">2.0%</label>
+                    </div>
+                    <div>
+                        <a class="btn btn-brown" href="roadmap.html"><img src="./images/icons/icon-earth.svg" alt="icon earth"/></a>
+                        <label class="item">1.0%</label>
+                        <label class="item">1.0%</label>
+                    </div>
                 </div>
             </div>
             <!-- End col chart -->
@@ -179,36 +185,37 @@
                 <div class="line-divider"></div>
                 <div class="list-info">
                     <div class="row">
-                        <div class="col-lg-3 text-capitalize">Ngày sinh:</div>
-                        <div class="col-lg-9">10/30/86 - Giờ mão</div>
+                        <div class="col-3 col-lg-3 text-capitalize">Ngày sinh:</div>
+                        <div class="col-9 col-lg-9">10/30/86 - Giờ mão</div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-3 text-capitalize">Giới tính:</div>
-                        <div class="col-lg-9">Nữ</div>
+                        <div class="col-3 col-lg-3 text-capitalize">Giới tính:</div>
+                        <div class="col-9 col-lg-9">Nữ</div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-3 text-capitalize">Chỗ sinh:</div>
-                        <div class="col-lg-9">Mạo Khê, Đông Triều, Quảng Ninh</div>
+                        <div class="col-3 col-lg-3 text-capitalize">Chỗ sinh:</div>
+                        <div class="col-9 col-lg-9">Mạo Khê, Đông Triều, Quảng Ninh</div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-3 text-capitalize">Địa chỉ:</div>
-                        <div class="col-lg-9">Mỹ đình, nam từ liên, Hà Nội, Việt Nam</div>
+                        <div class="col-3 col-lg-3 text-capitalize">Địa chỉ:</div>
+                        <div class="col-9 col-lg-9">Mỹ đình, nam từ liên, Hà Nội, Việt Nam</div>
                     </div>
                     <div class="row">
-                        <div class="col-lg-3 text-capitalize">Sở thích:</div>
-                        <div class="col-lg-9">Nghe nhạc</div>
+                        <div class="col-3 col-lg-3 text-capitalize">Sở thích:</div>
+                        <div class="col-9 col-lg-9">Nghe nhạc</div>
                     </div>
                 </div>
                 <div class="line-divider"></div>
                 <div class="row group-btn-destiny">
-                    <div class="col-lg-4"><button class="btn btn-money rounded-pill"><img src="./images/icons/icon-money.svg" alt=""/> Tiền tài</button></div>
-                    <div class="col-lg-4"><a class="btn btn-marriage rounded-pill" href="profile-detail.html"><img src="./images/icons/icon-marriage.svg" alt=""/> Hôn nhân</a></div>
-                    <div class="col-lg-4"><button class="btn btn-fame rounded-pill"><img src="./images/icons/icon-fame.svg" alt=""/> Công danh</button></div>
-                    <div class="col-lg-4"><button class="btn btn-health rounded-pill"><img src="./images/icons/icon-health.svg" alt=""/> Sức khỏe</button></div>
-                    <div class="col-lg-4"><button class="btn btn-children rounded-pill"><img src="./images/icons/icon-children.svg" alt=""/> Con cái</button></div>
+                    <div class="col-4 col-lg-4 pr-2"><button class="btn btn-money rounded-pill"><img src="./images/icons/icon-money.svg" alt=""/> Tiền tài</button></div>
+                    <div class="col-4 col-lg-4 px-2"><a class="btn btn-marriage rounded-pill" href="profile-detail.html"><img src="./images/icons/icon-marriage.svg" alt=""/> Hôn nhân</a></div>
+                    <div class="col-4 col-lg-4 pl-2"><button class="btn btn-fame rounded-pill"><img src="./images/icons/icon-fame.svg" alt=""/> Công danh</button></div>
+                    <div class="col-4 col-lg-4 pr-2"><button class="btn btn-health rounded-pill"><img src="./images/icons/icon-health.svg" alt=""/> Sức khỏe</button></div>
+                    <div class="col-4 col-lg-4 px-2"><button class="btn btn-children rounded-pill"><img src="./images/icons/icon-children.svg" alt=""/> Con cái</button></div>
                 </div>
                 <div class="d-flex justify-content-end group-btn-action">
                     <button class="btn btn-global rounded-pill btn-reset text-uppercase">Nhập lại</button>
+                    <a class="btn btn-global rounded-pill btn-accept text-uppercase" href="five-onion.html">Mệnh lý</a>
                 </div>
             </div>
             <!-- End col info -->
@@ -217,14 +224,14 @@
         <div class="clearfix"></div>
         <!-- Begin pagination page -->
         <div class="d-flex justify-content-center align-items-center page-pagination">
-            <div class="item-pagination prev"><img src="./images/icons/icon-prev.svg" alt=""/></div>
+            <div class="item-pagination prev d-none d-md-block"><img src="./images/icons/icon-prev.svg" alt=""/></div>
             <div class="item-pagination active"></div>
             <div class="item-pagination"></div>
             <div class="item-pagination"></div>
             <div class="item-pagination"></div>
             <div class="item-pagination"></div>
             <div class="item-pagination"></div>
-            <div class="item-pagination next text-right"><img src="./images/icons/icon-next.svg" alt=""/></div>
+            <div class="item-pagination next text-right d-none d-md-block"><img src="./images/icons/icon-next.svg" alt=""/></div>
         </div>
         <!-- End pagination page -->
 
@@ -247,26 +254,8 @@
     <script src="./js/jquery-3.5.1.min.js"></script>
     <script src="./js/popper.min.js"></script>
     <script src="./plugin//bootstrap/js/bootstrap.min.js"></script>
-    <script src="./plugin/jquery-nice-select/js/jquery.nice-select.min.js"></script>
     <script src="./js/script.js"></script>
-    <script type="text/javascript">
-        (function() {
-          'use strict';
-          window.addEventListener('load', function() {
-            var forms = document.getElementsByClassName('needs-validation');
-            
-            var validation = Array.prototype.filter.call(forms, function(form) {
-              form.addEventListener('submit', function(event) {
-                if (form.checkValidity() === false) {
-                  event.preventDefault();
-                  event.stopPropagation();
-                }
-                form.classList.add('was-validated');
-              }, false);
-            });
-          }, false);
-        })();
-    </script>
+    
 </body>
 
 </html>

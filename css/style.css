@@ -39,8 +39,8 @@ a, button{text-decoration: none!important;}
 .header .navbar-nav .navbar-item-toggler img{margin-top:12px; margin-left: 30px; cursor: pointer;}
 
 /* sidebar */
-.sidebar{position: absolute; width: 100%; height: 100%; top:0; left:0; z-index: 999; background: linear-gradient(270deg, #000000 13.75%, rgba(0, 0, 0, 0) 93.75%); transition: all 0.4s; transform: translateX(100%);}
-.sidebar.open{ transform: translateX(0%);}
+.sidebar{position: fixed; width: 100%; height: 100%; top:0; right:-100%; z-index: 999; background: linear-gradient(270deg, #000000 13.75%, rgba(0, 0, 0, 0) 93.75%); transition: all 0.4s; }
+.sidebar.open{ right:0}
 .sidebar .panel-menu{width: 30vw; position: relative; height: 100vh; float: right; min-width: 250px;}
 .sidebar .panel-menu .head{height: 15vh;}
 .sidebar .panel-menu .head .icon-close{margin-right:9vw; cursor: pointer;}
@@ -75,16 +75,18 @@ a, button{text-decoration: none!important;}
 .col-chart .heading .info p{font-size: 14px; color:#1E1E26; line-height: 20px; margin-bottom:10px; padding-left:10px}
 .col-chart .box-chart{height: calc(100vh - 430px);  min-height: 180px;}
 .col-chart .box-chart img{height: 100%;}
-.col-chart .group-btn-fate .btn{width: 80px; height: 30px; border-radius: 2px; margin-right:10px; line-height: 100%; padding:0px}
-.col-chart .group-label-percent .item{width: 80px; height: 21px; border-radius: 2px; background-color: #FFFFFF; border: 1px solid #F4F4F4; opacity: 0.9; box-shadow: 0px 6px 11px rgba(0, 0, 0, 0.25); margin:7px 10px 0px 0px; color: #231F20; font-size: 12px; line-height: 16px; font-weight: 500;}
-.col-chart .group-label-percent .icon{position: absolute; left:0; top:8px}
+.group-btn-fate .btn{width: 80px; height: 30px; border-radius: 2px; margin-right:10px; padding:0px; display: inherit;}
+.group-label-percent .item{width: 80px; height: 21px; border-radius: 2px; background-color: #FFFFFF; border: 1px solid #F4F4F4; opacity: 0.9; box-shadow: 0px 6px 11px rgba(0, 0, 0, 0.25); margin:7px 10px 0px 0px; color: #231F20; font-size: 12px; line-height: 16px; font-weight: 500; display: inherit;}
+.group-label-percent .icon{position: absolute; left:-25px; top:8px}
+.group-label-percent .icon.plus{top:39px}
+.group-label-percent .icon.minus{top:65px}
 
 /* col info */
 .body-page .col-info{width: 44.5vw; padding:1vh 30px}
 .col-info .heading-title{color:#ED2A32; font-size: 5vh; line-height: 70px; font-weight: 700;}
 .col-info .profile-form .scrollbar{height: calc(100vh - 390px); min-height: 210px; overflow-y: scroll; overflow-x: hidden; padding-right:5px; margin-bottom: 20px;}
-.col-info .profile-form .row{margin-bottom: 3%;}
-.col-info .profile-form .form-control{background: #1E1E26; border-color:#F4F4F4; box-sizing: border-box; box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.15); border-radius: 5px; height: 5.5vh; min-height: 30px; color:#fff; font-size: 12px;}
+.col-info .profile-form .row{margin-bottom: 0.7vh;}
+.col-info .profile-form .form-control{background: #1E1E26; border-color:#F4F4F4; box-sizing: border-box; box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.15); border-radius: 5px; height: 5.5vh; min-height: 30px; color:#fff; font-size: 12px; margin-bottom: 15px;}
 .form-control.is-invalid, .was-validated .form-control:invalid{border-color:#D91F26;}
 .col-info .profile-form .form-control::placeholder{color: #A8A8A8;}
 .col-info .profile-form .nice-select{width: 100%; line-height: 3vh; padding-left: 10px;}
@@ -92,6 +94,7 @@ a, button{text-decoration: none!important;}
 .col-info .profile-form .btn-accept{margin-left: 40px;}
 .col-info .profile-form .group-btn-action{padding-right:10px}
 .col-info .profile-form .note{color: #f4f4f4; font-size: 12px; line-height: 20px; font-style: italic; margin-bottom:10px}
+.col-info .profile-form .text-label{font-size: 14px; font-weight: 500; padding-top:5px}
 
 
 /* page pagination */
@@ -129,6 +132,14 @@ footer .social .icon{margin: 0px 3px}
 .profile-page .group-btn-destiny .btn-fame{background-color: rgba(61,181,74,0.4);}
 .profile-page .group-btn-destiny .btn-health{background-color: rgba(241,88,34,0.4);}
 .profile-page .group-btn-destiny .btn-children{background-color: rgba(139,95,61,0.4);}
+.profile-page .btn-accept{margin-left:50px}
+
+/* Five onion page */
+.profile-page .text-scale{font-size: 18px; padding:10px 0px}
+.profile-page .content{background-color:rgba(14,14,21,0.8); box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 0px 50px rgba(48, 168, 224, 0.1); border-radius: 3px; padding: 3vh 1vw 3vh 2vw; margin-bottom: 2vh; font-size: 14px; color:#fff; line-height: 20px;}
+.profile-page .content .scrollbar{height: calc(100vh - 600px); min-height: 130px; overflow-x: hidden; overflow-y: scroll; padding-right:0.7vw}
+.profile-page .group-btn-tab{margin:10px 0px 10px 0px}
+.five-onion-page .col-chart .box-chart img{width: 50%;}
 
 /* profile detail */
 .profile-detail-page .description{font-size: 18px; line-height: 30px; margin-bottom: 2vh;}
@@ -159,19 +170,19 @@ footer .social .icon{margin: 0px 3px}
 .profile-detail-page .col-chart .box-result form input.address{width: 180px;}
 .profile-detail-page .col-chart .box-result form .btn-link{background: url('../images/icons/icon-result-next.svg') no-repeat right 12px; font-size: 12px; font-weight: 500; color:#ED2A32}
 .profile-detail-page .col-chart .box-result .result-percent{margin:5px 0px}
-.profile-detail-page .col-chart .group-btn-tab{margin:10px 0px 0px 0px}
-.profile-detail-page .group-btn-tab .btn{color: #fff; text-align: center; font-size: 12px; font-weight: 500; outline: none; box-shadow: none;}
-.profile-detail-page .group-btn-tab .btn img{display: block; margin: 0 auto; border-radius: 50%; margin-bottom: 10px; width: 28px; height: 28px;}
-.profile-detail-page .group-btn-tab .btn.active .icon-marriage,
-.profile-detail-page .group-btn-tab .btn:hover .icon-marriage{box-shadow: 0px 0px 0px 6px rgba(45,169,225,0.2)}
-.profile-detail-page .group-btn-tab .btn.active  .icon-money,
-.profile-detail-page .group-btn-tab .btn:hover  .icon-money{box-shadow: 0px 0px 0px 6px rgba(255, 230, 77, 0.2)}
-.profile-detail-page .group-btn-tab .btn.active .icon-fame,
-.profile-detail-page .group-btn-tab .btn:hover .icon-fame{box-shadow: 0px 0px 0px 6px rgba(61, 181, 74, 0.2)}
-.profile-detail-page .group-btn-tab .btn.active .icon-health,
-.profile-detail-page .group-btn-tab .btn:hover .icon-health{box-shadow: 0px 0px 0px 6px rgba(241, 88, 34, 0.2)}
-.profile-detail-page .group-btn-tab .btn.active .icon-children,
-.profile-detail-page .group-btn-tab .btn:hover .icon-children{box-shadow: 0px 0px 0px 6px rgba(139, 95, 61, 0.2)}
+.group-btn-tab{margin:10px 0px 0px 0px}
+.group-btn-tab .btn{color: #fff; text-align: center; font-size: 12px; font-weight: 500; outline: none; box-shadow: none;}
+.group-btn-tab .btn img{display: block; margin: 0 auto; border-radius: 50%; margin-bottom: 10px; width: 28px; height: 28px;}
+.group-btn-tab .btn.active .icon-marriage,
+.group-btn-tab .btn:hover .icon-marriage{box-shadow: 0px 0px 0px 6px rgba(45,169,225,0.2)}
+.group-btn-tab .btn.active  .icon-money,
+.group-btn-tab .btn:hover  .icon-money{box-shadow: 0px 0px 0px 6px rgba(255, 230, 77, 0.2)}
+.group-btn-tab .btn.active .icon-fame,
+.group-btn-tab .btn:hover .icon-fame{box-shadow: 0px 0px 0px 6px rgba(61, 181, 74, 0.2)}
+.group-btn-tab .btn.active .icon-health,
+.group-btn-tab .btn:hover .icon-health{box-shadow: 0px 0px 0px 6px rgba(241, 88, 34, 0.2)}
+.group-btn-tab .btn.active .icon-children,
+.group-btn-tab .btn:hover .icon-children{box-shadow: 0px 0px 0px 6px rgba(139, 95, 61, 0.2)}
 
 /* css custom sw wizard step */
 .sw-theme-default{border: none;;}
@@ -212,7 +223,7 @@ footer .social .icon{margin: 0px 3px}
 .product-page .body-page{padding:3vh 60px}
 .product-page .head{color:#ED2A32; font-size: 4vh; font-weight: 700; margin-bottom:3vh}
 .product-page .filter{margin:20px 0px 30px 0px;}
-.product-page .filter label{margin-bottom: 2px; font-size: 14; color: #C4C4C4;}
+.product-page .filter label{margin-bottom: 2px; font-size: 14px; color: #C4C4C4;}
 .product-page .filter .btn{font-size: 14px; color: #C4C4C4; margin-left:10px; border-radius: 5px;}
 .product-page .filter .btn:hover, .product-page .filter .btn.active{color: #ED2A32; border: 1px solid #ED2A32}
 .product-page .card{background: transparent; text-align: center; border: none;}
@@ -282,3 +293,13 @@ footer .social .icon{margin: 0px 3px}
 .contact-page .contact-info .row-info{color:#fff; font-size: 14px; line-height: 25px; padding-left:40px; position: relative; margin-top:20px}
 .contact-page .contact-info .row-info .icon{ position: absolute; left:0; top:4px }
 .contact-page .contact-info .row-info .icon.phone{top:0px}
+
+/* ===== Page roadmap =====  */
+.roadmap-page .body-page{padding:3vh 60px}
+.roadmap-page .head{font-size: 36px; line-height: 70px;}
+.roadmap-page .sapo{font-weight: 500; font-size: 18px; line-height: 30px; margin:10px 0px}
+.roadmap-page .sapo img{margin-right:15px}
+.roadmap-page .content{background-color:rgba(14,14,21,0.8); box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 0px 50px rgba(48, 168, 224, 0.1); border-radius: 3px; padding: 3vh 1vw 3vh 2vw; margin-bottom: 2vh; font-size: 14px; color:#fff; line-height: 20px;}
+.roadmap-page .content .scrollbar{height: calc(100vh - 430px); min-height: 200px; overflow-x: hidden; overflow-y: scroll; padding-right:0.7vw; font-size: 14px; line-height: 20px;}
+.roadmap-page .chart{height: calc(100vh - 380px);}
+.roadmap-page .chart img{width: 100%; height: 100%;}
