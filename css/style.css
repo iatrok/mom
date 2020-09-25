@@ -90,7 +90,7 @@ a, button{text-decoration: none!important;}
 .col-info .heading-title{color:#ED2A32; font-size: 30px; line-height: 70px; font-weight: 700;}
 .col-info .profile-form .scrollbar{padding-right:5px; margin-bottom: 20px; height: auto; max-height: calc(100vh - 330px); min-height: 200px; overflow-y: scroll; overflow-x: hidden;}
 .col-info .profile-form .row{margin-bottom: 0px;}
-.col-info .profile-form .form-control{background: #1E1E26; border-color:#F4F4F4; box-sizing: border-box; box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.15); border-radius: 5px; height: 5.5vh; min-height: 35px; max-height: 50px; color:#fff; font-size: 0.6rem; margin-bottom: 2.5vh;}
+.col-info .profile-form .form-control{background: #1E1E26; border-color:#F4F4F4; box-sizing: border-box; box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.15); border-radius: 5.5px; height: 5vh; min-height: 35px; max-height: 50px; color:#fff; font-size: 0.6rem; margin-bottom: 1.5vh;}
 .col-info .profile-form .form-control::placeholder{color: #A8A8A8;}
 .col-info .profile-form .nice-select{width: 100%; line-height: 3.5vh; padding-left: 10px;}
 .col-info .profile-form .nice-select .option{color: #000;}
@@ -212,10 +212,11 @@ footer .social .icon{margin: 0px 3px; width: 16px;}
 
 /* ==== Page about ===== */
 .about-page .body-page{padding:3vh 60px}
-.about-page .head{color:#ED2A32; font-size: 26px; font-weight: 700;}
-.about-page .text-medium{color:#2DA9E1; font-size: 16px; line-height: 30px; font-weight: 500; margin:20px 0px}
+.about-page .head{color:#ED2A32; font-size: 24px; font-weight: 700;}
+.about-page .text-medium{color:#2DA9E1; font-size: 16px; line-height: 30px; font-weight: 500; margin:5px 0px}
 .about-page .text-infor{font-size: 12px; line-height: 20px; color:#fff; font-weight: 500;}
-.about-page .scrollbar{overflow-x: hidden; overflow-y: scroll; height: auto; max-height: calc(100vh - 270px);}
+.about-page .scrollbar{overflow-x: hidden; overflow-y: scroll; height: auto; max-height: calc(100vh - 230px);}
+.about-page .img img{width: 70%;}
 
 /* ==== Page mission ===== */
 .mission-page .body-page{padding:3vh 60px}
