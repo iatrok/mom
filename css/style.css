@@ -75,7 +75,7 @@ a, button{text-decoration: none!important;}
 .col-chart .heading .animal-age img{margin-left: -10px; margin-top:4px; width: 35px;}
 .col-chart .heading .title{margin-left: 70px; padding:0px 15px; border-radius: 6px; border:1px solid #1E1E26; color:#1E1E26; line-height: 30px; font-size: 20px; font-weight: 700;}
 .col-chart .heading .info p{font-size: 12px; color:#1E1E26; line-height: 20px; padding-left:10px; margin-bottom: 0px; margin-top:-2px}
-.col-chart .box-chart{height: auto; max-height: calc(100vh - 330px);  min-height: 300px; }
+.col-chart .box-chart{height: auto; max-height: calc(100vh - 340px);  min-height: 290px; }
 .col-chart .box-chart img{height: auto; width: auto; max-height: 100%; max-width: 100%;}
 .group-btn-fate{padding-left:30px}
 .group-btn-fate .btn{width: 60px; height: 25px; border-radius: 2px; margin-right:10px; padding:0px; display: inherit;}
@@ -88,9 +88,9 @@ a, button{text-decoration: none!important;}
 /* col info */
 .body-page .col-info{padding:1vh 30px; width: 53%;}
 .col-info .heading-title{color:#ED2A32; font-size: 30px; line-height: 70px; font-weight: 700;}
-.col-info .profile-form .scrollbar{padding-right:5px; margin-bottom: 20px; height: auto; max-height: calc(100vh - 330px); min-height: 200px; overflow-y: scroll; overflow-x: hidden;}
+.col-info .profile-form .scrollbar{padding-right:5px; margin-bottom: 20px; height: auto; max-height: calc(100vh - 310px); min-height: 200px; overflow-y: scroll; overflow-x: hidden;}
 .col-info .profile-form .row{margin-bottom: 0px;}
-.col-info .profile-form .form-control{background: #1E1E26; border-color:#F4F4F4; box-sizing: border-box; box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.15); border-radius: 5.5px; height: 5vh; min-height: 35px; max-height: 50px; color:#fff; font-size: 0.6rem; margin-bottom: 1.5vh;}
+.col-info .profile-form .form-control{background: #1E1E26; border-color:#F4F4F4; box-sizing: border-box; box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.15); border-radius: 5.5px; height: 5vh; min-height: 35px; max-height: 50px; color:#fff; font-size: 0.6rem; margin-bottom: 1.7vh;}
 .col-info .profile-form .form-control::placeholder{color: #A8A8A8;}
 .col-info .profile-form .nice-select{width: 100%; line-height: 3.5vh; padding-left: 10px;}
 .col-info .profile-form .nice-select .option{color: #000;}
